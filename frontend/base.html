@@ -44,7 +44,38 @@
 
     {% endblock %}
 
-   {% include 'navbar.html' %}
+    <div class="header">
+        <div class="container">
+            <a href="#" class="navbar-brand scroll-top">Cooking Chronicles
+                <h5>A Foodie's Guide to Deliciousness</h5>
+            </a>
+            
+            <nav class="navbar navbar-inverse" role="navigation">
+                <div class="navbar-header">
+                    <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <!--/.navbar-header-->
+                <div id="main-nav" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        {% for link in links %}
+                            
+                        <li><a href="./contacts/">about</a></li>
+        
+                        {% endfor %}
+                        
+                    </ul>
+                </div>
+                <!--/.navbar-collapse-->
+            </nav>
+            <!--/.navbar-->
+        </div>
+        <!--/.container-->
+    </div>
     <!--/.header-->
 
 
